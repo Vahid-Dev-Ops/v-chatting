@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./Images/simple-walpaper-for-chatting.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Borel', cursive;
+}
+.center-div, .message-footer, .input-div{
+    display: flex;
+    align-items: center;
+}
+/*Message screen section*/
+.center-div{
+    width: 60%;
+    height: 80%;
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.message-div{
+    width: 95%;
+    height: 80%;
+    overflow: auto;
+    background-image: url(./Images/message-div-walpaper.png);
+    background-size: cover;
+}
+/*Message input section*/
+.message-footer{
+    width: 95%;
+    height: 15%;
+    justify-content: space-evenly;
+    background-color: white;
+}
+.input-div{
+    width: 85%;
+    height: 90%;
+    border: 1.5px solid gray;
+    border-radius: 15px;
+    justify-content: space-evenly;
+}
+.smile-button{
+    padding: 15px;
+    color: rgb(0, 140, 255);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+#text-input{
+    width: 80%;
+    height: 70%;
+    font-size: 1.3rem;
+    border: none;
+    border-color: transparent;
+}
+#text-input:focus{
+    outline: none;
+}
+.send-button{
+    padding:20px;
+    color: white;
+    background-color:  rgb(0, 140, 255);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.message-p{
+    display: inline-block;
+    background-color: white;
+    border-radius: 10px;
+    border-bottom-left-radius: 0%;
+    padding: 5px;
+    margin: 3% 1%;
+}
+/*Emojis section*/
+.sticker-section{
+    width: 95%;
+    height: 40%;
+    border: 1px solid gold;
+    background-color: white;
+    position: absolute;
+    display: none;
+    bottom: 3%;
+    
+}
+.sticker-exit{
+    position: absolute;
+    right: 0%;
+    font-size: 1.3rem;
+    padding: 1px 8px;
+    cursor: pointer;
+}
+.stickers{
+    width: 8%;
+    height: 20%;
+    margin: 0% 5%;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.emojis-all{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: auto;
+    margin-top: 10%;
+}
+h3{
+    color: red;
+}
+@media screen and (max-width:1000px) {
+    .center-div{
+        width: 80%;
+        height: 70%;
+    }
+    .message-footer{
+        height: 10%;
+    }
+    .send-button{
+        padding: 15px;
+    }
+}
+@media screen and (max-width:700px) {
+    .center-div{
+        width: 90%;
+    }
+}
+@media screen and (max-width:500px) {
+    .send-button{
+        padding: 10px;
+    }
+    .center-div{
+        height: 80%;
+    }
+}
+@media screen and (max-width:300px) {
+    #text-input{
+        font-size: 0.7rem;
+    }
+}

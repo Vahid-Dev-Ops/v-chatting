@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V Chatting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="log-in-section first-section">
+            <div class="log-in-title">
+                <h1>V Chatting</h1>
+                <p>Fast, safe and global chatting</p>
+            </div>
+            <form action="#">
+                <h2>Log In</h2>
+                <div class="input-div">
+                    <input class="name-input" type="text" placeholder="User Name" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-div">
+                    <input class="password-input" type="password" placeholder="Password" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+            </form>
+            <p>Don't have an account? <span class="register">Register</span> </p>
+            <p class="warning-p"></p>
+            <button class="sign-in-button">Sign In</button>
+
+        </div>
+        <div class="log-in-section register-section">
+            <div class="log-in-title">
+                <h1>V Chatting</h1>
+                <p>Fast, safe and global chatting</p>
+            </div>
+            <form action="#">
+                <h2>Register</h2>
+                <div class="input-div register-input">
+                    <input class="register-name-input" type="text" placeholder="User Name" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-div register-input">
+                    <input class="register-password-input" type="password" placeholder="Password" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+            </form>
+            <p>Back to  <a class="login-a" href="./index.html">Log In</a> </p>
+            <p class="warning-p"></p>
+            <button class="register-button">Register</button>
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
